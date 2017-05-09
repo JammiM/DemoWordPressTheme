@@ -1,0 +1,72 @@
+/*
+Theme Name: DemoTheme
+Theme URI: https://wordpress.org
+Author: James M
+Author URI: https://wordpress.org/
+Description: This is a demo theme made by James
+Version: 1.0
+Tags: Theme,
+*/
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+a:link,
+a:visited {
+	color: #006ec3;
+}
+
+
+/*
+###############  GENERAL ########################
+*/
+
+.container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.post {
+		border-bottom: 2px dotted #999;
+}
+
+.post:last-of-type {
+		border-bottom: none;
+}
+
+
+/*
+###############  HEADER ########################
+*/
+
+
+.site-header {
+	border-bottom: 2px solid #999;
+}
+
+
+
+
+
+
+
+
+/*
+###############  FOOTER ########################
+*/
+
+
+.site-footer {
+	border-top: 2px solid #999;
+	margin-top: 30px;
+}
