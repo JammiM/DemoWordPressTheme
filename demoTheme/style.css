@@ -96,20 +96,10 @@ article .post:last-of-type {
 ###############  FOOTER ########################
 */
 
-
 .site-footer {
 	border-top: 2px solid #999;
 	margin-top: 30px;
 }
-
-
-
-
-
-
-
-
-
 
 /*
 ###############  NAV BAR ########################
@@ -138,25 +128,64 @@ article .post:last-of-type {
 	float: left;
 }
 
-
-
-
-
-
-
-
-
-
 /*
 ###############  FOOTER NAV BAR ########################
 */
-
-
-
-
 
 .site-footer .site-nav ul li a {
 	margin-right: 10px;
 	padding-right: 10px;
 	border-right: 1px dotted #888;
+}
+
+/*
+###############  SINGLE PAGE ########################
+*/
+article.page h2 {
+	font-size: 300%;
+}
+
+
+
+/*
+###############  TWO COLUMN LAYOUT ( ABOUT PAGE) ########################
+*/
+
+
+.clearfix::before, .clearfix::after { content: ""; display: table;}
+.clearfix::after { clear: both;}
+.clearfix { *zoom: 1;}
+
+
+.title-column {
+	width: 30%;
+	float: left;
+}
+
+
+.text-column {
+	width: 70%;
+	float: right;
+}
+
+
+/*
+###############  INFO BOX TEMPLATE ########################
+*/
+
+.info-box {
+	width: 30%;
+	float: right;
+	margin: 0 0 30px 30px;
+	padding: 20px;
+	background-color: #EEE;
+}
+
+
+.info-box h4 {
+	margin-bottom: 6px;
+}
+
+.info-box p {
+	font-size: 85%;
 }
