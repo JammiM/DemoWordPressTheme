@@ -2,11 +2,16 @@
 Theme Name: DemoTheme
 Theme URI: https://wordpress.org
 Author: James M
-Author URI: https://wordpress.org/
+Author URI: https://wordpress.org
 Description: This is a demo theme made by James
 Version: 1.0
 Tags: Theme,
 */
+
+html {
+	padding: 0;
+	margin: 0;
+}
 
 body {
 	font-family: Arial, sans-serif;
@@ -15,54 +20,47 @@ body {
 }
 
 p {
-	line-height: 1.5em;
-
+	line-height: 1.65em;
+	margin: 0 0 1em 0;
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
 	color: #006ec3;
 }
+
 
 
 /*
 ###############  GENERAL ########################
 */
 
-.container {
+div.container {
 	max-width: 920px;
 	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-
 article .post {
-		border-bottom: 2px dotted #999;
+	border-bottom: 2px dotted #999;
+	margin-bottom: 20px;
 }
 
 article .post:last-of-type {
-		border-bottom: none;
+	border-bottom: none;
 }
-
 
 /*
 ###############  HEADER ########################
 */
 
-
 .site-header {
 	border-bottom: 2px solid #999;
 }
 
-
-
 .site-header .site-nav ul li {
 	margin-right: 5px;
 }
-
-
-
 
 .site-header .site-nav ul li a:link,
 .site-header .site-nav ul li a:visited {
@@ -71,26 +69,17 @@ article .post:last-of-type {
 	border: 1px solid #888;
 	border-bottom: none;
 	text-decoration: none;
-
 }
-
-
-
-
 
 .site-header .site-nav ul li a:hover {
 	background-color: #ECECEC;
 }
-
-
-
 
 .site-header .site-nav ul li.current-menu-item a:link,
 .site-header .site-nav ul li.current-menu-item a:visited {
 	background-color: #006ec3;
 	color: #fff;
 }
-
 
 /*
 ###############  FOOTER ########################
@@ -132,11 +121,25 @@ article .post:last-of-type {
 ###############  FOOTER NAV BAR ########################
 */
 
-.site-footer .site-nav ul li a {
+
+.site-footer nav {
+	margin: 30px 0 10px 0;
+}
+
+.site-footer nav ul li {
 	margin-right: 10px;
 	padding-right: 10px;
-	border-right: 1px dotted #888;
+	border-right: 1px solid #DDD;
 }
+
+.site-footer nav ul li:last-of-type {
+	border-right: none;
+}
+
+
+
+
+
 
 /*
 ###############  SINGLE PAGE ########################
@@ -145,29 +148,23 @@ article.page h2 {
 	font-size: 300%;
 }
 
-
-
 /*
 ###############  TWO COLUMN LAYOUT ( ABOUT PAGE) ########################
 */
 
-
 .clearfix::before, .clearfix::after { content: ""; display: table;}
 .clearfix::after { clear: both;}
 .clearfix { *zoom: 1;}
-
 
 .title-column {
 	width: 30%;
 	float: left;
 }
 
-
 .text-column {
 	width: 70%;
 	float: right;
 }
-
 
 /*
 ###############  INFO BOX TEMPLATE ########################
@@ -180,7 +177,6 @@ article.page h2 {
 	padding: 20px;
 	background-color: #EEE;
 }
-
 
 .info-box h4 {
 	margin-bottom: 6px;

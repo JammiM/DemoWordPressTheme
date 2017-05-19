@@ -11,9 +11,9 @@ if ( have_posts() ) :
 		</article>
 
 	<?php endwhile;
-	else :
-		echo '<p>No content found</p>';
-	endif;
+		else :
+			echo '<p>No content found</p>';
+		endif;
 
 get_footer();
 
