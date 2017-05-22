@@ -229,3 +229,21 @@ article.page h2 {
 	color: #333;
 	cursor: default;
 }
+
+
+/*
+###############  META DATA FOR BLOG POSTS ########################
+*/
+
+.post h2 {
+	margin-bottom: 0;
+}
+
+p.post-info {
+	font-size: 90%;
+	color: #999;
+}
+
+p.post-info:nth-child(2) {
+	margin-bottom: 0;
+}
